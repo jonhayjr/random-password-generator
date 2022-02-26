@@ -15,7 +15,20 @@ const getRandomPassword = (length = 12) => {
 }
 
 const generatePasswords = () => {
+    let password1El = document.getElementById('password1');
+    let password2El = document.getElementById('password2');
+    let password3El = document.getElementById('password3');
+    let password4El = document.getElementById('password4');
 
+    let randomPassword1 = getRandomPassword();
+    let randomPassword2 = getRandomPassword();
+    let randomPassword3 = getRandomPassword();
+    let randomPassword4 = getRandomPassword();
+
+    password1El.value = randomPassword1;
+    password2El.value = randomPassword2;
+    password3El.value = randomPassword3;
+    password4El.value = randomPassword4;
 }
 
 const generatePasswordBtn = document.getElementById('password-generator-btn');

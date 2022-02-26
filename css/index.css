@@ -121,4 +121,5 @@ input {
     padding: 0.5em;
     border-radius: 5px;
     color: var(--secondary-color);
+    text-align: center;
 }
