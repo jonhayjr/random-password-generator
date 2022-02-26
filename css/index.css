@@ -3,9 +3,11 @@
 :root {
     --primary-color: #1F2937;
     --secondary-color: #0EA5E9;
+    --darker-grey: #374151;
     --lighter-grey: #273549;
     --white: #F9FAFB;
     --medium-grey: #D5D4D8;
+    --lighter-blue: #388DF8;
 }
 
 /*Utility Classes*/
@@ -21,6 +23,13 @@
     outline: none;
     background: none;
     border: none;
+}
+
+.grid {
+    max-width: 450px;
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    grid-gap: 20px;
 }
 
 /*Main CSS*/
@@ -49,6 +58,8 @@ body {
     max-width: 550px;
     background-color: var(--primary-color);
     margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .password {
@@ -59,16 +70,20 @@ body {
 .heading {
     color: var(--white);
     margin-bottom: 0.15em;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 .description {
     color: var(--medium-grey);
     margin-bottom: 2em;
+    font-size: 20px;
 }
 
 .cta {
     background-color: var(--secondary-color);
     padding: 0.75em;
+    margin-bottom: 2em;
     border-radius: 5px;
     color: var(--white);
     display: flex;
@@ -76,8 +91,33 @@ body {
     justify-content: space-between;
 }
 
+.cta:hover {
+    background-color: var(--lighter-blue);
+    cursor: pointer;
+}
+
 .btn-icon {
     width: 14px;
     height: 18px;
     margin-right: 0.5em;
+}
+
+.divider {
+    width: 446px;
+    background-color: var(--darker-grey);
+    border: none;
+    height: 1px;
+    margin-bottom: 1em;
+}
+
+.password-fields {
+    margin-top: 1.5em;
+}
+
+input {
+    background-color: var(--lighter-grey);
+    outline: none;
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
 }
