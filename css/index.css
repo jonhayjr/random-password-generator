@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700;800&display=swap');
+
+:root {
+    --primary-color: #1F2937;
+    --secondary-color: #0EA5E9;
+    --lighter-grey: #273549;
+    --white: #F9FAFB;
+    --medium-grey: #D5D4D8;
+}
+
+/*Utility Classes*/
+.text-blue {
+    color: var(--secondary-color);
+}
+
+.block {
+    display: block;
+}
+
+.btn {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+/*Main CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Karla', sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    width: 75%;
+    max-width: 550px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+.password {
+    padding: 2em;
+    color: var(--white);
+}
+
+.heading {
+    color: var(--white);
+    margin-bottom: 0.15em;
+}
+
+.description {
+    color: var(--medium-grey);
+    margin-bottom: 2em;
+}
+
+.cta {
+    background-color: var(--secondary-color);
+    padding: 0.75em;
+    border-radius: 5px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-icon {
+    width: 14px;
+    height: 18px;
+    margin-right: 0.5em;
+}
