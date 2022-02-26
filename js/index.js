@@ -1,9 +1,12 @@
+/*Array of possible password characters*/
 const possibleCharacters = ["1","2","3","4","5","6","7","8","9","10", "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "?", "!", "@", "<", ">", ":", ";", "&", "=", "+", "-"]
 
+/*Function to get random number*/
 const getRandomNumber = (max) => {
     return Math.floor(Math.random() * max);
 }
 
+/*Function to get random password*/
 const getRandomPassword = (length = 12) => {
     let password = '';
 
@@ -14,6 +17,7 @@ const getRandomPassword = (length = 12) => {
     return password;
 }
 
+/*Function to generate 4 random passwords and update input values*/
 const generatePasswords = () => {
     let password1El = document.getElementById('password1');
     let password2El = document.getElementById('password2');
@@ -31,5 +35,6 @@ const generatePasswords = () => {
     password4El.value = randomPassword4;
 }
 
+/*Adds event listener to Generate Passwords button and runs generatePasswords function*/
 const generatePasswordBtn = document.getElementById('password-generator-btn');
 generatePasswordBtn.addEventListener('click', generatePasswords);

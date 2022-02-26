@@ -14,13 +14,17 @@
             <section class="password">
                 <h2 class="heading">Generate a <span class="text-blue block">random password</span></h2>
                 <p class="description">Never use an insecure password again.</p>
+                <div class="password-length-input-group">
+                    <label for="password-length-input" class="password-length-input-label">Password Length:</label>
+                    <input type="text" id="password-length-input" class="password-length-input" name="password-length-input" placeholder="Enter password length"/>
+                </div>
                 <button class="cta btn" id="password-generator-btn"><img class= "btn-icon" src="./img/Icon.svg" alt=""> Generate passwords</button>
                 <hr class="divider">
                 <div class="grid password-fields">
-                    <input type="text" value="" disabled="disabled" id="password1"/>
-                    <input type="text" value="" disabled="disabled" id="password2"/>
-                    <input type="text" value="" disabled="disabled" id="password3"/>
-                    <input type="text" value="" disabled="disabled" id="password4"/>
+                    <input type="text" value="" disabled="disabled" id="password1" class="password-input"/>
+                    <input type="text" value="" disabled="disabled" id="password2" class="password-input"/>
+                    <input type="text" value="" disabled="disabled" id="password3" class="password-input"/>
+                    <input type="text" value="" disabled="disabled" id="password4" class="password-input"/>
                 </div>
             </section>
         </div>

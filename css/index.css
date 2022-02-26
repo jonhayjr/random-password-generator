@@ -26,14 +26,13 @@
 }
 
 .grid {
-    max-width: 450px;
+    max-width: 350px;
     display: grid;
-    grid-template-columns: repeat(2,  1fr);
+    grid-template-columns: repeat(1,  1fr);
     grid-gap: 20px;
 }
 
 /*Main CSS*/
-
 * {
     margin: 0;
     padding: 0;
@@ -103,7 +102,7 @@ body {
 }
 
 .divider {
-    width: 446px;
+    width: 100%;
     background-color: var(--darker-grey);
     border: none;
     height: 1px;
@@ -122,4 +121,29 @@ input {
     border-radius: 5px;
     color: var(--secondary-color);
     text-align: center;
+}
+
+.password-length-input-group {
+    margin-bottom: 1.5em;
+}
+
+.password-length-input-label {
+    margin-right: 0.5em;
+}
+
+.password-length-input {
+    text-align: left;
+    border: 1px solid transparent;
+}
+
+.password-length-input:focus {
+    border: 1px solid white;
+}
+
+/*Media queries*/
+@media screen and (min-width: 768px) {
+    .grid {
+        max-width: 450px;
+        grid-template-columns: repeat(2,  1fr);
+    }
 }
