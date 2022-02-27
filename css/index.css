@@ -124,16 +124,26 @@ input {
 }
 
 .password-length-input-group {
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
 }
 
 .password-length-input-label {
-    margin-right: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .password-length-input {
     text-align: left;
     border: 1px solid transparent;
+    max-width: 200px;
+}
+
+/*Disable spinner button*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 .password-length-input:focus {
@@ -145,5 +155,15 @@ input {
     .grid {
         max-width: 450px;
         grid-template-columns: repeat(2,  1fr);
+    }
+
+    .password-length-input-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .password-length-input-label {
+        margin-bottom: 0;
+        margin-right: 0.5em;
     }
 }
