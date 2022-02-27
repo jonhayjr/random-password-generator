@@ -39,7 +39,10 @@ const generatePasswords = () => {
     password4El.value = randomPassword4;
 }
 
-/*Adds event listener to Generate Passwords button and runs generatePasswords function*/
-const generatePasswordBtn = document.getElementById('password-generator-btn');
-generatePasswordBtn.addEventListener('click', generatePasswords);
+/*Adds event listener to passwords length form and runs generatePasswords function*/
+const passwordLengthForm = document.getElementById('password-length-form');
+passwordLengthForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    generatePasswords();
+});
 
